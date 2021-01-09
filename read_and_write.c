@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <windows.h>
 
-typedef struct _my_struct
-{
+typedef struct {
     unsigned char len;
     char buffer[0x39];
 } my_struct;
 
 int main_loop(my_struct* pshared)
 {
-    struct _buf {
+    struct {
         unsigned char mode;
         char text[0x39];
     } buf;
